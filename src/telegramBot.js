@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const User = require('../model/user');
+const User = require('../model/user');  
 
 module.exports = function setupTelegramBot(app) {
   console.log('process.env.TelegramBot', process.env.TelegramBot);
